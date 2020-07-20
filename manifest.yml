@@ -1,4 +1,6 @@
- applications:
- - name: cloudnative-uit
-   random-route: true
-   memory: 128M
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: ibm-toolchain-test
+  name: ibm-toolchain-test
+  memory: 64M
+  stack: cflinuxfs2
